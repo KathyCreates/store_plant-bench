@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo_green.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Bench</title>
+</head>
+
+<body>
+  <div class="bg-lighter-green">
+    <div class="container mx-auto px-6 lg:px-12 xl:px-20">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Plants</span>
+              <img src="assets/images/logo_light.png" alt="" class="h-8 w-auto">
+            </a>
+          </div>
+
+          <div class="flex lg:hidden">
+            <button type="button" command="show-modal" commandfor="mobile-menu"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+              <span class="sr-only">Open main menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                aria-hidden="true" class="size-6">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-sm/6 font-bold text-white hover:text-orange">Home</a>
+            <a href="#" class="text-sm/6 font-bold text-white hover:text-orange">Marketplace</a>
+            <a href="#" class="text-sm/6 font-bold text-white hover:text-orange">Blog</a>
+            <a href="#" class="text-sm/6 font-bold text-white hover:text-orange">About</a>
+            <a href="#" class="text-sm/6 font-bold text-white hover:text-orange">Contact</a>
+          </div>
+
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm/6 font-bold text-white hover:text-orange">Log in <span
+                aria-hidden="true">&rarr;</span></a>
+          </div>
+
+        </nav>
+        <el-dialog>
+          <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+            <div tabindex="0" class="fixed inset-0 focus:outline-none">
+              <el-dialog-panel
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                  <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Plants</span>
+                    <img src="assets/images/logo_dark.png" alt="" class="h-8 w-auto">
+                  </a>
+
+                  <button type="button" command="close" commandfor="mobile-menu"
+                    class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                      aria-hidden="true" class="size-6">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900">Home</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900">Marketplace</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900">Blog</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900">About</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900">Contact</a>
+                    </div>
+                    <div class="py-6">
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-300">Log
+                        in</a>
+                    </div>
+                  </div>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+      </header>
+
+      <div class="relative isolate pt-25">
+        <div aria-hidden="true"
+          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+          <div
+            style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+            class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#679C53] to-[#7DC662] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75">
+          </div>
+        </div>
+
+        <div class="container mx-auto flex flex-col sm:flex-row gap-8 sm:items-end sm:justify-between">
+          <div class="max-w-2xl py-10 sm:py-24 lg:py-32 sm:flex-1">
+            <div class="text-left">
+              <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-classic font-weight-700 tracking-tight text-balance text-white">
+                Bring The Nature Close To You
+              </h1>
+              <p class="mt-6 text-base sm:text-lg lg:text-xl font-light text-pretty text-white">
+                In our store you will find plants for any interior and mood that will bring fresh air and harmony to
+                your space.
+              </p>
+              <div class="mt-8 flex items-center gap-x-6">
+                <a href="#"
+                  class="rounded-md bg-orange px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-orange-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-hover">
+                  Get started
+                </a>
+                <a href="#" class="text-sm font-semibold text-white hover:text-orange">Learn more <span
+                    aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-none
+              mx-auto sm:mx-0
+              w-50 h-65
+              sm:w-60 sm:h-90
+              md:w-72 md:h-96
+              lg:w-80 lg:h-[28rem]
+              xl:w-96 xl:h-[32rem]
+              rounded-t-full overflow-hidden bg-light-yellow shadow-2xl ring-1 ring-black/10 sm:self-end">
+            <img src="assets/images/fiddle-leaf-fig-plant-pot.png" alt="Plant" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-green py-24 sm:py-20 pt-14">
+      <div
+        class="container mx-auto flex flex-col sm:flex-row gap-8 sm:items-end sm:justify-between px-6 lg:px-12 xl:px-20">
+        <dl class="flex flex-col gap-y-2 max-w-xs text-center mx-auto sm:mx-0">
+          <dt class="text-xs sm:text-sm md:text-base text-white pt-3">
+            Enjoy free delivery on all orders over $50, straight to your doorstep.
+          </dt>
+          <dd
+            class="order-first text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-light-yellow">
+            <span class="inline sm:block min-[900px]:inline">Free</span> Delivery
+          </dd>
+        </dl>
+
+        <dl class="flex flex-col gap-y-2 max-w-xs text-center mx-auto sm:mx-0">
+          <dt class="text-xs sm:text-sm md:text-base text-white pt-3">
+            Your transactions are safe with our trusted payment gateways.
+          </dt>
+          <dd
+            class="order-first text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-light-yellow">
+            <span class="inline sm:block min-[900px]:inline">Safe</span> Payment
+          </dd>
+        </dl>
+
+        <dl class="flex flex-col gap-y-2 max-w-xs text-center mx-auto sm:mx-0">
+          <dt class="text-xs sm:text-sm md:text-base text-white pt-3">
+            Our team is here to help you choose and care for your plants anytime.
+          </dt>
+          <dd
+            class="order-first text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-light-yellow">
+            <span class="inline sm:block min-[900px]:inline">Friendly</span> Services
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light-yellow py-10 sm:pt-10 pt-14">
+    <div
+      class="container mx-auto flex flex-col sm:flex-row gap-8 sm:items-end sm:justify-between px-6 lg:px-12 xl:px-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        <div class="bg-gray rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+          <div class="flex items-center h-full">
+            <div class="p-6 flex-1">
+              <p class="text-md font-classic font-weight-700 text-green">Big Sale Products</p>
+              <p class="text-green text-3xl font-medium mt-2">Indoor Plants</p>
+              <p class="text-orange mt-4 uppercase underline decoration-orange">Shop now</p>
+            </div>
+            <div class="w-48 h-48">
+              <img class="w-full h-full object-cover" src="assets/images/indoor_plant.png" alt="Plant">
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray rounded-xl shadow-md overflow-hidden hover:shadow-lg transition w-full h-64">
+          <div class="flex items-center h-full">
+            <div class="p-6 flex-1">
+              <p class="text-md font-classic font-weight-700 text-green">Top Products</p>
+              <p class="text-green text-3xl font-medium mt-2">Herbal Plants</p>
+              <p class="text-orange mt-4 uppercase underline decoration-orange">Shop now</p>
+            </div>
+            <div class="w-48">
+              <img class="w-full h-full object-cover" src="assets/images/herbal_plant.png" alt="Plant">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light-yellow py-15 sm:py-10 pt-14">
+    <div class="container mx-auto flex flex-col items-center px-6 lg:px-12 xl:px-20">
+      <p
+        class="relative inline-block text-4xl font-classic font-normal tracking-normal text-balance text-green text-center">
+        Our Products
+        <span class="absolute left-1/2 -bottom-2 transform -translate-x-1/2 w-24 h-[3px] bg-green rounded"></span>
+      </p>
+    </div>
+
+    <div class="container mx-auto flex flex-col px-6 lg:px-12 xl:px-20 pt-7">
+      <nav class="flex justify-between gap-3 sm:gap-6 flex-wrap pt-10">
+        <div class="flex gap-x-6">
+          <a href="#"
+            class="px-5 py-2 rounded-4xl border-2 text-center border-green text-white font-bold bg-green text-sm uppercase transition-all duration-300">
+            What's new
+          </a>
+
+          <a href="#"
+            class="px-5 py-2 rounded-4xl border-2 text-center border-green text-green font-bold text-sm uppercase transition-all duration-300 hover:bg-green hover:text-white">
+            Best sellers
+          </a>
+
+          <a href="#"
+            class="px-5 py-2 rounded-4xl border-2 text-center border-green text-green font-bold text-sm uppercase transition-all duration-300 hover:bg-green hover:text-white">
+            Customer favorites
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container mx-auto flex flex-col px-6 lg:px-12 xl:px-20 pt-7 pb-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <div class="bg-white h-90 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition relative">
+          <div class="w-full h-68 bg-gray hover:bg-green-hover transition">
+            <img class="w-full h-full object-contain" src="assets/images/mostera_deliciosa.png" alt="mostera_deliciosa">
+            <button
+              class="absolute top-3 right-3 p-2 rounded-full bg-gray shadow-md bg-opacity-60 hover:bg-opacity-100 transition">
+              <img class="w-5 h-5" src="assets/images/heart_icon.png" alt="like">
+            </button>
+          </div>
+          <div class="p-4 flex-shrink-0">
+            <p class="text-lg font-semibold text-green">Monstera Deliciosa</p>
+            <p class="text-orange font-bold">$15.00</p>
+          </div>
+        </div>
+
+        <div class="bg-white h-90 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition relative">
+          <div class="w-full h-68 bg-gray hover:bg-green-hover transition">
+            <img class="w-full h-full object-contain" src="assets/images/snake_plant.png" alt="mostera_deliciosa">
+            <button
+              class="absolute top-3 right-3 p-2 rounded-full bg-gray shadow-md bg-opacity-60 hover:bg-opacity-100 transition">
+              <img class="w-5 h-5" src="assets/images/heart_icon.png" alt="like">
+            </button>
+          </div>
+          <div class="p-4 flex-shrink-0">
+            <p class="text-lg font-semibold text-green">Snake Plant</p>
+            <p class="text-orange font-bold">$14.00</p>
+          </div>
+        </div>
+
+        <div class="bg-white h-90 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition relative">
+          <div class="w-full h-68 bg-gray hover:bg-green-hover transition">
+            <img class="w-full h-full object-contain" src="assets/images/fiddle_leaf_fig.png" alt="mostera_deliciosa">
+            <button
+              class="absolute top-3 right-3 p-2 rounded-full bg-gray shadow-md bg-opacity-60 hover:bg-opacity-100 transition">
+              <img class="w-5 h-5" src="assets/images/heart_icon.png" alt="like">
+            </button>
+          </div>
+          <div class="p-4 flex-shrink-0">
+            <p class="text-lg font-semibold text-green">Fiddle Leaf Fig</p>
+            <p class="text-orange font-bold">$20.00</p>
+          </div>
+        </div>
+
+        <div class="bg-white h-90 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition relative">
+          <div class="w-full h-68 bg-gray hover:bg-green-hover transition">
+            <img class="w-full h-full object-contain" src="assets/images/mostera_deliciosa.png" alt="mostera_deliciosa">
+            <button
+              class="absolute top-3 right-3 p-2 rounded-full bg-gray shadow-md bg-opacity-60 hover:bg-opacity-100 transition">
+              <img class="w-5 h-5" src="assets/images/heart_icon.png" alt="like">
+            </button>
+          </div>
+          <div class="p-4 flex-shrink-0">
+            <p class="text-lg font-semibold text-green">Monstera Deliciosa</p>
+            <p class="text-orange font-bold">$15.00</p>
+          </div>
+        </div>
+
+        <div class="bg-white h-90 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition relative">
+          <div class="w-full h-68 bg-gray hover:bg-green-hover transition">
+            <img class="w-full h-full object-contain" src="assets/images/snake_plant.png" alt="mostera_deliciosa">
+            <button
+              class="absolute top-3 right-3 p-2 rounded-full bg-gray shadow-md bg-opacity-60 hover:bg-opacity-100 transition">
+              <img class="w-5 h-5" src="assets/images/heart_icon.png" alt="like">
+            </button>
+          </div>
+          <div class="p-4 flex-shrink-0">
+            <p class="text-lg font-semibold text-green">Snake Plant</p>
+            <p class="text-orange font-bold">$14.00</p>
+          </div>
+        </div>
+
+        <div class="bg-white h-90 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition relative">
+          <div class="w-full h-68 bg-gray hover:bg-green-hover transition">
+            <img class="w-full h-full object-contain" src="assets/images/fiddle_leaf_fig.png" alt="mostera_deliciosa">
+            <button
+              class="absolute top-3 right-3 p-2 rounded-full bg-gray shadow-md bg-opacity-60 hover:bg-opacity-100 transition">
+              <img class="w-5 h-5" src="assets/images/heart_icon.png" alt="like">
+            </button>
+          </div>
+          <div class="p-4 flex-shrink-0">
+            <p class="text-lg font-semibold text-green">Fiddle Leaf Fig</p>
+            <p class="text-orange font-bold">$20.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray py-24 sm:py-10 pt-14">
+    <div class="container mx-auto flex flex-col items-center px-6 lg:px-12 xl:px-20">
+      <p class="text-3xl font-classic font-medium text-center text-green">
+        Follow us on Instagram
+      </p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10">
+        <img class="w-full h-48 object-cover rounded-lg" src="assets/images/home_plant1.jpg" alt="Plant 1">
+        <img class="w-full h-48 object-cover rounded-lg" src="assets/images/home_plant2.jpg" alt="Plant 2">
+        <img class="w-full h-48 object-cover rounded-lg" src="assets/images/home_plant3.jpg" alt="Plant 3">
+        <img class="w-full h-48 object-cover rounded-lg" src="assets/images/home_plant4.jpg" alt="Plant 4">
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green py-24">
+    <div class="container mx-auto flex flex-col items-center px-6 lg:px-12 xl:px-20">
+      <p class="text-3xl font-classic text-center text-white mb-10 capitalize">
+        Stay in the loop with the special offers,<br>plant parenting tip & more.
+      </p>
+
+      <!-- Форма по центру з шириною 3/4 на мобільних екранах -->
+      <div class="flex flex-col sm:flex-row gap-4 w-3/4 sm:w-2/3 mx-auto">
+        <input type="email" placeholder="Enter your email"
+          class="px-4 py-3 bg-gray rounded-sm border-none focus:outline-none focus:ring-2 focus:ring-orange text-gray-900 w-full sm:w-2/3">
+
+        <button
+          class="bg-orange text-white font-semibold py-3 px-6 rounded-sm w-full sm:w-1/3 hover:bg-orange-hover hover:text-white transition duration-300">
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green py-10 pb-20">
+    <div class="container mx-auto flex flex-col items-center px-6 lg:px-12 xl:px-20">
+      <!-- Текст футера -->
+      <p class="text-white text-center mb-4 text-md font-normal">
+        At Plant Bench, we offer a wide range of premium plants, tips for plant care, and exciting promotions to help
+        you bring nature into your home. Join our community to receive exclusive updates and gardening advice straight
+        to your inbox.
+      </p>
+
+      <div class="flex space-x-6 mb-6">
+        <a href="#" class="text-white hover:text-gray-300 transition duration-300">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300 transition duration-300">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="#" class="text-white hover:text-gray-300 transition duration-300">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+
+      <p class="text-white text-center text-sm">
+        © 2025 Plant Bench. All rights reserved.
+      </p>
+    </div>
+  </div>
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

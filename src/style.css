@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-main: "Roboto";
+  --font-classic: "STIX Two Text";
+  --color-green: #0C3523;
+  --color-lighter-green: #0C4029;
+  --color-orange: #C36D4A;
+  --color-orange-hover: #8D533B;
+  --color-light-yellow: #ECEFDA;
+  --color-gray: #DDDDDB;
+  --color-green-hover: #78BF7B;
+}
